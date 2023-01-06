@@ -193,6 +193,38 @@ footer a:hover{
     /* color: var(--pink)!important; */
     color: rgba(141, 96, 37, 0.658)!important;
 }
+.hidden{
+ opacity: 0;
+ filter: blur(5px);
+ transform: translateX(-100%);
+ transition: all 1s;
+}
+.hidden:nth-child(2){
+    transition-delay:200ms ;
+}
+.hidden:nth-child(3){
+    transition-delay:400ms ;
+}
+.hidden:nth-child(4){
+    transition-delay:600ms ;
+}
+.hidden:nth-child(5){
+    transition-delay:800ms ;
+}
+.hidden:nth-child(6){
+    transition-delay:1000ms ;
+}
+.hidden:nth-child(7){
+    transition-delay:1200ms ;
+}
+.hidden:nth-child(8){
+    transition-delay:1400ms ;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 /* media queries */
 @media(min-width: 992px){
